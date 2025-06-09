@@ -1,96 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About Me Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Agastya Govind</h1>
+    <p>Web Developer | Programmer | Tech Enthusiast</p>
+  </header>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1"></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home Page</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Me</a>
-    
-  </div>
-</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<!-- Main content-->
-<div class="w3-main">
+  <div class="container">
 
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Educational History</h1>
-      <p>I attended Sydney Boys High School (SBHS) from 2017 to 2023. In early 2024 I attended the University of New South Wales, studying Computer Science.
-        I am currently taking a Computer Science degree at the University of Illinois Urbana-Champaign.
-      </p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <h3>Software Developer – Tech Company</h3>
+      <p><em>Jan 2023 – Present</em></p>
+      <ul>
+        <li>Developed and maintained web applications using React and Node.js</li>
+        <li>Collaborated with cross-functional teams to deliver high-quality software</li>
+      </ul>
 
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Hobbies</h1>
-      <h2 class="w3-text-teal">Debating</h2>
-      <p>I've competed in debating throughout high school and into University. I've had experience as both a debating coach, taking a competitive high school debating team, and as an adjudicator, judging across multiple prestigious high school tournaments.
-        Furthermore, I've competed at several University competitions as both a debater and an adjudicator. As a debater I've won the novice finals of UPenn Pre-WUDC, been the 4th best novice speaker and competed in a semi-final at Western IV and been the best novice speaker, 6th best overall speaker and competed in the final at East Malaya Open.
-        I've broken as an adjudicator at several competitions including UCLA IV, Indo Pro-Am, UNSW Pre-Australs, Mac Pre-Australs, USU Open and UNSW Pre-Easters.  
-      </p>
-      <h2 class="w3-text-teal">Chess</h2>
-      <p>I've competed in chess for several years. Online, I've achieved a rating in the 99.7 - 99.9th percentile. Over the board, I've achieved an	Australian Chess Federation peak rating of 1825 which is T400 nationally.
-        I've also achieved a FIDE Blitz peak rating of 1827 and a USCF rating of 1635. I was 1st in the U1500 section of the Champaign Chess Championship #6, 1st at Inner West ACF Quick Tournament April 2023,
-        2nd at Inner West Open Blitz Tournament July 2022 and at the 2023 City of Sydney Blitz Tournament I was awarded 'Best under 1800'.
-      </p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
+      <h3>Junior Web Developer – Startup</h3>
+      <p><em>Jun 2021 – Dec 2022</em></p>
+      <ul>
+        <li>Built responsive websites and dashboards using HTML/CSS and JavaScript</li>
+        <li>Integrated REST APIs and improved UX design</li>
+      </ul>
+    </section>
 
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+      
+      <h3>Task Manager App</h3>
+      <p>A full-stack to-do list app using Node.js, Express, and MongoDB.</p>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
-    </div>
+      <h3>Machine Learning Classifier</h3>
+      <p>Built a Python classifier to detect spam emails with 95% accuracy using Scikit-learn.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vue.js</li>
+        <li>Node.js, Express</li>
+        <li>Python, Flask</li>
+        <li>Git & GitHub</li>
+        <li>SQL & NoSQL Databases</li>
+      </ul>
+    </section>
   </div>
 
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32" style="text-align: center;">
-      <h4>agastya.govind@gmail.com | https://www.linkedin.com/in/agovind23/ | 447-902-5706</h4>
-    </div>
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-</script>
-
 </body>
 </html>
