@@ -1,0 +1,291 @@
+/* ========================================
+   PORTFOLIO — SHARED STYLESHEET
+   Aesthetic: Refined editorial / minimal luxury
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── CSS Variables ── */
+:root {
+  --bg:          #f7f5f0;
+  --surface:     #ffffff;
+  --text:        #1a1a1a;
+  --text-muted:  #6b6b6b;
+  --accent:      #c0392b;
+  --accent-soft: #f0e8e7;
+  --border:      #e0dcd5;
+  --header-bg:   #1a1a1a;
+  --nav-bg:      #111111;
+  --footer-bg:   #1a1a1a;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  --radius:   6px;
+  --shadow:   0 2px 16px rgba(0,0,0,0.08);
+  --max-w:    960px;
+  --nav-h:    48px;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+header {
+  background: var(--header-bg);
+  color: #fff;
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+
+header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+header p {
+  font-size: 0.875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #aaa;
+  font-weight: 400;
+}
+
+/* ── Nav ── */
+nav {
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  height: var(--nav-h);
+  align-items: stretch;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+  border-bottom-color: var(--accent);
+}
+
+/* ── Main Container ── */
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* ── Section headings ── */
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+/* ── Experience / Project cards ── */
+.entry {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+}
+
+.entry-meta {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.entry ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.75rem;
+}
+
+.entry ul li {
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  position: relative;
+  color: #3a3a3a;
+  font-size: 0.95rem;
+}
+
+.entry ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ── Skills grid ── */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-tag {
+  background: var(--accent-soft);
+  border: 1px solid #dcc;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  letter-spacing: 0.03em;
+  transition: background 0.15s;
+}
+
+.skill-tag:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* ── Links ── */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ── Projects link callout ── */
+.callout {
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--footer-bg);
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+footer a {
+  color: #ccc;
+  border-bottom-color: transparent;
+}
+
+footer a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* ── Game iframe page ── */
+.gamecont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 60vh;
+}
+
+.gamecont iframe {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 100%;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  nav a { padding: 0 0.85rem; font-size: 0.72rem; }
+  .container { padding: 2rem 1.25rem; }
+  .entry { padding: 1.25rem; }
+}

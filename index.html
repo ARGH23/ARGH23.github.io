@@ -3,119 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    nav {
-      background: #444;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem 0;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <title>Agastya Govind — Portfolio</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+
   <header>
-    <h1>Agastya Govind </h1>
-    <p>Web Developer | Programmer | Game Designer</p>
+    <h1>Agastya Govind</h1>
+    <p>Web Developer &nbsp;|&nbsp; Programmer &nbsp;|&nbsp; Game Designer</p>
   </header>
 
   <nav>
-    <a href="/index.html">Home</a>
-    <a href="#about">About</a>
+    <a href="/index.html" class="active">Home</a>
     <a href="/projects.html">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
+  <main>
+    <div class="container">
 
-    <section id="projects">
-      <h3>A list of some of my projects can be found <a href="/projects.html"> here</a></h3>
-    </section>
+      <section id="projects-link">
+        <div class="callout">
+          A list of my projects can be found on the <a href="/projects.html">Projects page →</a>
+        </div>
+      </section>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <h3>Research Assistant @ UNSW</h3>
-      <p><em>Aug 2023 – Nov 2023</em></p>
-      <ul>
-        <li>Assisted an academic project which investigated regional differences in perceptions of high school teacher effectiveness and engagement</li>
-        <li>Data included survey responses from 17,000 parents nationwide and information on 119,000 American schools</li>
-        <li>My role focused on finding the great-circle distance to pinpoint schools within a 10-mile radius of each respondent's location to improve data utility </li>
-      </ul>
+      <section id="experience">
+        <h2>Work Experience</h2>
 
-      <h3>Cyber Security Intern @ Torrens University</h3>
-      <p><em>Feb 2023 – May 2023</em></p>
-      <ul>
-        <li>Worked with the Head of the IT department and explored practical components of cyber security</li>
-        <li>My role included making phishing emails and checking the Torrens network using a Virtual Machine</li>
-      </ul>
-    </section>
+        <div class="entry">
+          <h3>Market Analyst (Investment Team) — Alpha Investment Management</h3>
+          <p class="entry-meta">Jan 2026 – Present</p>
+          <ul>
+            <li>Selected for a competitive investment team focused on quantitative market research and financial modeling</li>
+            <li>Performed equity analysis and built a tool to compute DCF valuations from SEC filing data</li>
+            <li>Developed and backtested a market prediction model to assess trading strategies</li>
+          </ul>
+        </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, Flask</li>
-        <li>Numpy, Pandas, Plotly, Matlab</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>C, C++</li>
-        <li>Git & GitHub</li>
-        <li>SQL & NoSQL Databases</li>
-        <li>Pygame, GameMaker</li>
-      </ul>
-    </section>
-  </div>
+        <div class="entry">
+          <h3>Research Assistant — UNSW</h3>
+          <p class="entry-meta">Aug 2023 – Nov 2023</p>
+          <ul>
+            <li>Assisted an academic project investigating regional differences in perceptions of high school teacher effectiveness and engagement</li>
+            <li>Dataset included survey responses from 17,000 parents nationwide and information on 119,000 American schools</li>
+            <li>Pinpointed schools within a 10-mile radius of each respondent using great-circle distance calculations to improve data utility</li>
+          </ul>
+        </div>
 
-  <footer>
-    <section id="contact">
-      <p>&copy; agastya.govind@gmail.com | https://www.linkedin.com/in/agovind23/ | 447-902-5706</p>
-    </section>
+        <div class="entry">
+          <h3>Cyber Security Intern — Torrens University</h3>
+          <p class="entry-meta">Feb 2023 – May 2023</p>
+          <ul>
+            <li>Worked with the Head of IT and explored practical components of cyber security</li>
+            <li>Crafted phishing email simulations and audited the Torrens network using a Virtual Machine</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Plotly</span>
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">NoSQL</span>
+          <span class="skill-tag">PyGame</span>
+          <span class="skill-tag">GameMaker</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="contact">
+    <p>
+      <a href="mailto:agastya.govind@gmail.com">agastya.govind@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/agovind23/" target="_blank" rel="noopener">LinkedIn</a>
+      &nbsp;&middot;&nbsp;
+      447-902-5706
+    </p>
   </footer>
+
 </body>
 </html>

@@ -3,126 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    nav {
-      background: #444;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem 0;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <title>Projects — Agastya Govind</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+
   <header>
     <h1>Agastya Govind</h1>
-    <p>Web Developer | Programmer | Game Designer</p>
+    <p>Web Developer &nbsp;|&nbsp; Programmer &nbsp;|&nbsp; Game Designer</p>
   </header>
 
   <nav>
     <a href="/index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="/projects.html">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="/projects.html" class="active">Projects</a>
+    <a href="/index.html#contact">Contact</a>
   </nav>
 
-  <div class="container">
+  <main>
+    <div class="container">
 
-    <section id="projects">
-      <h3>Option Pricer Website | HTML, CSS, Python, Flask</h3>
-      <ul>
-        <li>Created a website that calculates an option's price using the Black Scholes method</li>
-        <li>Calculated risk-free rate using stock's localized bonds and linear interpolation/least square solutions</li>
-      </ul>
+      <section id="projects">
+        <h2>Projects</h2>
 
-      <h3>Student Response Score Prediction Website | HTML, CSS, Python, Pytorch, Flask</h3>
-      <ul>
-        <li>Developed a website that predicted a student's mark to a  question given their short answer response</li>
-        <li>Used real-world data for accurate and sophisticated model training using the PyTorch library</li>
-      </ul>
+        <div class="entry">
+          <h3>Option Pricer Website</h3>
+          <p class="entry-meta">HTML &middot; CSS &middot; Python &middot; Flask</p>
+          <ul>
+            <li>Created a website that calculates an option's price using the Black-Scholes method</li>
+            <li>Calculated risk-free rate using the stock's localised bonds with linear interpolation and least-squares solutions</li>
+          </ul>
+        </div>
 
-      <h2>Projects</h2>
-      <h3>Game Development in PyGame, GameMaker | Python, PyGame</h3>
-      <ul>
-        <li>Recently, I've also been developing games in GameMaker</li>
-        <li>A couple of these, made for game jams, are <a href="/ogame.html"> playable here</a> and <a href="/game.html"> here</a></li>
+        <div class="entry">
+          <h3>Student Response Score Prediction Website</h3>
+          <p class="entry-meta">HTML &middot; CSS &middot; Python &middot; PyTorch &middot; Flask</p>
+          <ul>
+            <li>Developed a website that predicts a student's mark given their short-answer response</li>
+            <li>Used real-world data for accurate model training via the PyTorch library</li>
+          </ul>
+        </div>
 
-        <li>I've also designed multiple games using the PyGame library, including a Wordle clone</li>
-      </ul>
+        <div class="entry">
+          <h3>HackIllinois — Capital One Healthcare Expense Manager</h3>
+          <p class="entry-meta">JavaScript &middot; HTML &middot; Capital One API &middot; OpenAI &middot; MySQL</p>
+          <ul>
+            <li>Built a website to help users manage and monitor healthcare expenses</li>
+            <li>Integrated a receipt-scanning feature using GPT-4o-mini to automatically extract expense details from medical receipts</li>
+          </ul>
+        </div>
 
-      <h3>Hack Illinois Capital One Submission | Javascript, HTML, Capital One API, OpenAI</h3>
-      <ul>
-        <li>Worked on a website that helps you manage and monitor your healthcare expenses. The application includes a
-receipt scanning feature that uses OpenAI’s GPT-4o-mini model to automatically extract expense details from
-medical receipts.</li>
-      </ul>
+        <div class="entry">
+          <h3>Data Visualisation Project</h3>
+          <p class="entry-meta">Python &middot; Pandas &middot; Plotly</p>
+          <ul>
+            <li>Used Pandas and Plotly to illustrate correlations between different school examination grades</li>
+          </ul>
+        </div>
 
-      <h3>Data Visualization Project | Python, Pandas, Plotly</h3>
-      <ul>
-        <li>Used Pandas and Plotly libraries to illustrate correlations between different school examination grades</li>
-      </ul>
+        <div class="entry">
+          <h3>Weather Website with API Integration</h3>
+          <p class="entry-meta">HTML &middot; CSS &middot; JavaScript</p>
+          <ul>
+            <li>Developed a website displaying weather conditions for any searched location by calling external weather APIs</li>
+          </ul>
+        </div>
 
-      <h3>Weather Website with API Integration | HTML, CSS, JavaScript</h3>
-      <ul>
-        <li>Developed a website that displayed weather conditions for any searched location by calling external APIs</li>
-      </ul>
+      </section>
+    </div>
+  </main>
 
-      
-    </section>
-  </div>
-
-  <footer>
-    <section id="contact">
-      <p>&copy; agastya.govind@gmail.com | https://www.linkedin.com/in/agovind23/ | 447-902-5706</p>
-    </section>
+  <footer id="contact">
+    <p>
+      <a href="mailto:agastya.govind@gmail.com">agastya.govind@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/agovind23/" target="_blank" rel="noopener">LinkedIn</a>
+      &nbsp;&middot;&nbsp;
+      447-902-5706
+    </p>
   </footer>
+
 </body>
 </html>
